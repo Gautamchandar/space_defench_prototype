@@ -1,201 +1,203 @@
 # 🛰️ AFTER THE LANDSLIDE
-### AI-Powered Satellite Disaster Intelligence Platform
+### AI-Assisted Post-Landslide Satellite Intelligence Platform
 
 **Hackathon Project | Space & Defence Technology**
 
-> Turning satellite imagery into actionable post-landslide intelligence to support faster disaster response, route assessment, and rescue planning.
+> Turning satellite imagery and geospatial intelligence into actionable post-landslide insights for damage assessment, road accessibility analysis, and disaster response planning.
 
 ---
 
-## 🌍 Overview
+## 🌍 1. Project Overview
 
-Landslides can destroy roads, damage infrastructure, block transportation routes, and isolate communities within minutes. After a major landslide, emergency response teams need reliable information about the affected area to plan rescue operations and assess accessibility.
+Landslides can severely damage infrastructure, block roads, disrupt transportation, and isolate communities within minutes. In the aftermath, disaster response teams need timely geographic information to understand the affected region and plan their next steps.
 
-**AFTER THE LANDSLIDE** is a prototype for an AI-assisted geospatial intelligence platform designed to help generate an initial post-landslide map using satellite imagery, geospatial information, and change-detection techniques.
+**AFTER THE LANDSLIDE** is a disaster-intelligence prototype focused on the challenge of creating *the first map after a landslide*. It demonstrates an interactive geospatial workflow designed to help users explore affected regions, review potential landscape changes, and assess road and infrastructure conditions.
 
-The platform aims to help response teams understand the affected region, identify potential damage zones, assess possible road blockages, and prioritize areas for further inspection.
+The long-term vision is to combine satellite imagery, AI-assisted change detection, and GIS-based visualization into a unified decision-support platform.
 
-## 🎯 Problem Statement
+## 🎯 2. Problem Statement
 
-**The First Map After the Landslide**
+### The First Map After the Landslide
 
-After a landslide, timely and reliable maps of the affected region may be unavailable. Field surveys can be difficult because roads may be blocked, terrain may be unstable, and affected areas may be inaccessible.
+After a landslide, reliable maps of the affected region may not be immediately available. Field inspections can be delayed by blocked roads, unstable terrain, and inaccessible locations.
 
-This creates a critical information gap for disaster management authorities, rescue teams, and infrastructure assessment agencies.
+This information gap makes it harder for disaster management authorities and response teams to understand the extent of the event, identify areas requiring attention, and assess possible access routes.
 
-The challenge is to develop a solution that can help produce an initial map of the affected region using available satellite data and geospatial intelligence.
+**Our challenge:** Develop a technology-driven approach to support the creation of an initial post-landslide map using satellite observations and geospatial intelligence.
 
-## 💡 Our Solution
+## 💡 3. Proposed Solution
 
-AFTER THE LANDSLIDE proposes an AI-assisted mapping workflow that compares pre-event and post-event satellite imagery to help identify changes in the affected landscape.
+AFTER THE LANDSLIDE demonstrates a centralized mapping interface for post-landslide situational awareness.
 
-The resulting geospatial view is intended to support:
+The proposed workflow combines geographic visualization with analysis of pre-event and post-event satellite imagery to help identify changes that may be associated with landslide activity.
 
-- **Affected-area assessment:** Visualize areas requiring further investigation.
-- **Change detection:** Highlight significant differences between pre-event and post-event imagery.
-- **Road accessibility assessment:** Identify potential road disruptions for verification.
-- **Infrastructure awareness:** Help locate infrastructure that may have been affected.
-- **Response planning:** Present relevant map layers in a centralized interface for faster situational awareness.
+### Key objectives
 
-The platform is designed as a decision-support tool. Satellite-based findings should be verified before being used for operational rescue decisions.
+- **Affected-area assessment:** Visualize regions requiring further investigation.
+- **Change detection:** Compare observations from before and after a landslide.
+- **Road accessibility assessment:** Highlight potential disruptions for review.
+- **Infrastructure awareness:** Help identify infrastructure near potentially affected zones.
+- **Response planning:** Present geographic information through a unified dashboard.
+- **Human verification:** Enable analysts to review observations before operational decisions are made.
 
-## ⚙️ How It Works
+The platform is intended to support decision-making, not replace field verification or authoritative emergency-response systems.
 
-1. **Area Selection** — Select or define the landslide-affected region.
-2. **Satellite Data Input** — Obtain suitable pre-event and post-event satellite imagery.
-3. **Image Processing** — Prepare imagery for comparison and geospatial analysis.
-4. **Change Detection** — Analyze differences that may indicate landslide-related changes.
-5. **Geospatial Mapping** — Display detected changes and relevant geographic features on a map.
-6. **Human Verification** — Allow analysts or response teams to review findings before operational use.
-7. **Actionable Intelligence** — Support initial damage assessment and response planning.
+## 🗺️ 4. Prototype Features
 
-## 🗺️ Prototype Capabilities
+The prototype repository includes an interactive web application with components organized around disaster intelligence and assessment workflows.
 
-The prototype is intended to demonstrate the user workflow for post-landslide mapping and disaster intelligence.
+- Interactive map interface
+- Disaster overview dashboard
+- Change-detection view
+- Data-source interface
+- Road-assessment view
+- Reports interface
+- Feature-detail and guided-tour interfaces
+- Mock disaster data for demonstrating selected workflows
 
-Depending on the implemented modules, the interface can present:
+**Implementation note:** The presence of a user interface does not necessarily mean that live satellite feeds, automated AI inference, or validated damage detection are connected. These capabilities should be demonstrated as operational only when their underlying integrations have been implemented and tested.
 
-- Interactive geospatial dashboard
-- Affected-region visualization
-- Pre-event and post-event imagery comparison
-- Potential change or debris-zone overlays
-- Road and infrastructure assessment layers
-- Map-based situational awareness for response planning
+## ⚙️ 5. How It Works
 
-**Implementation status:** Features that require satellite-data integration, AI inference, or external geospatial services must be validated against the actual running prototype before being described as operational.
+1. **Define the region:** Select or identify the area affected by a landslide.
+2. **Collect observations:** Obtain suitable pre-event and post-event satellite imagery.
+3. **Prepare the imagery:** Align and preprocess the observations for comparison.
+4. **Analyze changes:** Apply appropriate image-analysis or change-detection methods.
+5. **Visualize results:** Display geographic observations and relevant map layers.
+6. **Review findings:** Allow users to inspect potential changes and uncertain results.
+7. **Support response planning:** Use verified information to inform further assessment and route planning.
 
-## 🧠 Proposed Technical Architecture
+Steps involving satellite acquisition, automated analysis, and verified outputs depend on the actual data integrations and processing capabilities available.
+
+## 🧠 6. Proposed Technical Architecture
 
 ```text
-Satellite Imagery / Geospatial Inputs
+Satellite Imagery & Geospatial Inputs
                  |
                  v
        Image Preprocessing
                  |
                  v
-    AI-Assisted Change Detection
+     AI-Assisted Change Detection
                  |
                  v
-     Geospatial Analysis (GIS)
+       Geospatial Analysis (GIS)
                  |
                  v
-      Interactive Map Dashboard
+     Interactive Map Dashboard
                  |
                  v
-     Human Review & Verification
+      Human Review & Verification
                  |
                  v
-     Disaster Response Planning
+      Disaster Response Planning
 ```
 
-## 🛠️ Technology Stack
+This represents the proposed end-to-end workflow. The current prototype demonstrates selected interface and visualization components; the complete pipeline requires the corresponding data and processing integrations.
 
-The final technology stack should reflect the libraries and services actually used in the repository.
+## 🛠️ 7. Technology Stack
 
-| Component | Purpose |
+| Technology | Role |
 |---|---|
-| Frontend | Interactive user interface and dashboard |
-| Backend / API | Data processing and application logic |
-| Mapping / GIS | Geographic visualization and map layers |
-| Satellite imagery | Pre-event and post-event observations |
-| AI / Image analysis | Potential change detection and classification |
-| Data visualization | Presenting relevant information clearly |
+| Next.js | Web application framework |
+| React | Component-based user interface |
+| TypeScript | Type-safe application development |
+| Tailwind CSS | Interface styling |
+| JavaScript / Node.js | Application runtime and development tooling |
+| Geospatial mapping | Interactive geographic visualization |
 
-**Potential technologies for future integration:** Python, GeoPandas, Rasterio, GDAL, satellite imagery services, and suitable computer-vision models.
+**Potential future integrations:** Python, GeoPandas, Rasterio, GDAL, satellite imagery services, elevation datasets, and suitable computer-vision models.
 
-These are proposed options, not a claim that every technology is already implemented.
+The proposed integrations are future options and should not be interpreted as already implemented unless confirmed in the codebase.
 
-## 🚀 Getting Started
+## 🚀 8. Getting Started
 
 ### Prerequisites
 
-- Git
-- Node.js and npm, if the project uses a Node.js-based application
-- Access to any external services required by the application
+- Node.js and npm
+- Git, if cloning the repository
+- Access to any external services required by the configured application
 
-### Installation
-
-Clone the repository:
+### Clone the repository
 
 ```bash
 git clone https://github.com/Gautamchandar/space_defench_prototype.git
-```
-
-Navigate to the project directory:
-
-```bash
 cd space_defench_prototype
 ```
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server:
+### Run the development server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL shown in the terminal, commonly `http://localhost:3000` for a Next.js application.
+Open the local URL displayed in the terminal. For a typical Next.js development setup, this is:
 
-> These commands assume the repository contains a compatible Node.js project and the relevant npm scripts. Follow the project's actual configuration if it differs.
+`http://localhost:3000`
 
-## 🧪 Validation and Testing
+If the application requires environment variables or external services, configure them according to the project's setup instructions.
 
-The prototype should be evaluated against representative landslide scenarios using:
+## 🧪 9. Testing and Validation
 
-- Pre-event and post-event imagery of the same region
-- Visual comparison with reference maps or verified observations
-- Review of detected changes and possible false positives
-- Assessment of map clarity and usability
-- Verification of road and infrastructure observations before operational use
+A complete evaluation should include:
 
-Performance metrics should be reported only after appropriate testing on labelled or independently verified data.
+- Comparison of pre-event and post-event imagery from the same region
+- Visual review against reference maps or verified observations
+- Assessment of false positives caused by clouds, shadows, vegetation, or seasonal changes
+- Review of road and infrastructure observations
+- Usability testing of the map interface
+- Validation using labelled or independently verified data
 
-## 🔐 Limitations
+Accuracy, processing speed, and detection performance should be reported only after appropriate testing.
 
-- Results depend on satellite-image availability, resolution, acquisition time, and image quality.
-- Clouds, shadows, vegetation, and seasonal changes can affect change detection.
-- Satellite observations may not provide a complete picture of ground-level conditions.
-- Road accessibility and infrastructure damage require independent verification.
-- The prototype is not a replacement for emergency services or authoritative disaster-management systems.
+## 🔐 10. Limitations
 
-## 🔮 Future Scope
+- Results depend on satellite-image resolution, availability, acquisition time, and quality.
+- Clouds, shadows, and seasonal variations can affect image comparison.
+- Satellite observations alone may not establish actual ground conditions.
+- Potential road blockages and infrastructure damage require independent verification.
+- Demonstration data may not represent real-time disaster conditions.
+- The prototype is not a substitute for emergency services or official disaster-management systems.
 
-- Integration with live or regularly updated satellite imagery sources
+## 🔮 11. Future Scope
+
+- Integration with satellite imagery providers
 - Automated pre-event and post-event image comparison
-- AI-based landslide extent segmentation
+- AI-based landslide-extent segmentation
 - Road blockage and infrastructure damage assessment
-- Integration of elevation models and terrain analysis
-- GIS export capabilities and downloadable assessment reports
-- Field verification and collaboration workflows
-- Confidence scores and uncertainty visualization
+- Digital elevation models and terrain analysis
+- Confidence scoring and uncertainty visualization
+- GIS exports and downloadable assessment reports
+- Field-verification and team-collaboration workflows
 - Support for additional disaster scenarios
 
-## 🌐 Potential Applications
+## 🌐 12. Potential Applications
 
-- Disaster management authorities
-- Search-and-rescue coordination teams
-- Remote infrastructure assessment
+- Disaster management and emergency planning
+- Search-and-rescue coordination support
+- Post-disaster infrastructure assessment
 - Emergency route planning
 - Geospatial intelligence and research
-- Post-disaster damage assessment
+- Remote-area situational awareness
 
-## 🏆 Hackathon Objective
+## 🏆 13. Hackathon Objective
 
-Our objective is to demonstrate how satellite imagery, AI-assisted analysis, and geospatial visualization can help bridge the information gap immediately after a landslide.
+Our objective is to demonstrate how satellite-based observations, geospatial visualization, and AI-assisted analysis could help address the information gap immediately after a landslide.
 
-By bringing relevant geographic information into one interface, AFTER THE LANDSLIDE aims to support faster situational awareness and better-informed disaster response planning.
+By bringing relevant geographic information into one interface, **AFTER THE LANDSLIDE** explores a practical approach to faster situational awareness and better-informed disaster response planning.
 
-## 👨‍💻 Project Information
+## 📌 Project Information
 
-**Project:** AFTER THE LANDSLIDE  
-**Category:** Space & Defence Technology  
-**Project Type:** Disaster Intelligence Prototype  
-**Repository:** [GitHub Repository](https://github.com/Gautamchandar/space_defench_prototype)
+- **Project Name:** AFTER THE LANDSLIDE
+- **Category:** Space & Defence Technology
+- **Project Type:** Disaster Intelligence Prototype
+- **Repository:** https://github.com/Gautamchandar/space_defench_prototype
 
 ---
 
